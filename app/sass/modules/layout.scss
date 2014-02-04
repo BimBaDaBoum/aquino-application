@@ -1,0 +1,116 @@
+header {
+    padding-top: 20px;
+    width: 100%;
+    margin-bottom: 20px;
+
+    .menu {
+        float: left;
+        font-size: 35px;
+        margin-top: -1px;
+        cursor: pointer;
+    }
+
+    .settings {
+        float: right;
+        font-size: 30px;
+        cursor: pointer;
+    }
+}
+
+nav {
+    position: fixed;
+    font-family: "Ubuntu";
+    top: 0; left: 0; bottom: 0;
+    width: $nav-width;
+    background: $nav-bg;
+    color: $nav-color;
+    z-index: 2;
+    overflow-y: auto;
+
+    .title {
+        background: $nav-title-bg;
+        padding: 10px;
+        width: 100%;
+        display: block;
+    }
+
+    .item {
+        border-bottom: solid 1px $nav-title-bg;
+        padding: 10px;
+    }
+
+    .icon {
+        font-size: 25px;
+        vertical-align: middle;
+        padding-right: 10px;
+    }
+
+    .label {
+        float: right;
+        background: $nav-color;
+        color: $nav-bg;
+        padding: 4px;
+        margin-right: 5px;
+        @include border-radius(3px);
+    }
+}
+
+[id=infos] {
+    width: 100%;
+
+    .item {
+        margin-top: 30px;
+        font-size: 25px;
+        text-align: center;
+        color: #838383;
+        float: left;
+        width: 33.333333333%;
+
+        h1 {
+            font-size: 50px;
+            color: $logo-color;
+            margin-bottom: 5px;
+        }
+    }
+}
+
+[id=alerts] {
+    margin-top: 50px;
+
+    .item {
+        min-height: 150px;
+        padding: 20px 10px 20px 10px;
+        width: 100%;
+        background: #fff;
+        word-wrap: break-word;
+        position: relative;
+
+        h1 {
+            margin-bottom: 20px;
+            color: #696969;
+        }
+
+        p {
+            color: #8c8c8c;
+        }
+    }
+}
+
+[id=alerts-pagination] {
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+
+    span {
+        display: inline-block;
+        @include border-radius(12px);
+        width: 12px;
+        height: 12px;
+        background: #838383;
+        margin-right: 5px;
+    }
+
+    .selected {
+        background: #09974c;
+    }
+}

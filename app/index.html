@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <!-- On definie l'encodage des caracteres de la page -->
+        <meta charset="utf-8">
+
+        <!-- On definie le viewport: taille du contenue, le zoom et si l'utilisateur peut zoomer -->
+        <meta name="viewport" content="width = device-width, initial-scale = 1, user-scalable = no">
+        <!-- On dit au telephone que l'application est adaptee pour les telephone -->
+        <meta name="HandheldFriendly" content="true">
+        <!-- On dit au telephone d'executer cette application sous forme de WEBAPP -->
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="mobile-web-app-capable" content="yes">
+        <!-- On desactive l'auto detection de numeros de telephone dans la page -->
+        <meta name="format-detection" content="telephone=no">
+        <!-- On definie la couleur de la status bar sous iOS -->
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <!-- On definie le nom de l'application sous iOS -->
+        <meta name="apple-mobile-web-app-title" content="Aquino">
+
+        <title>Aquino</title>
+            
+        <!-- On charge le style -->
+        <link rel="stylesheet" type="text/css" href="styles/app.css">
+
+        <!-- On charge les icones -->
+        <link rel="icon" href="resources/images/icon.png">
+        <link rel="apple-touch-icon" href="resources/images/icon.png">
+
+        <!-- On charge l'image de chargement de l'application -->
+        <link rel="apple-touch-startup-image" href="resources/images/start.png">
+    </head>
+
+    <body>
+    
+        <!-- La navigation slidable -->
+        <nav>
+            <span class="title">Général</span>
+                <div class="item">
+                    <span class="icon">&#xe609;</span>
+                    Accueil
+                </div>
+
+            <span class="title">Statistiques</span>
+                <div class="item">
+                    <span class="icon">&#xe603;</span>
+                    Température
+                </div>
+                <div class="item">
+                    <span class="icon">&#xe606;</span>
+                    pH
+                </div>
+                <div class="item">
+                    <span class="icon">&#xe607;</span>
+                    Taux d'oxygène
+                </div>
+                <div class="item">
+                    <span class="icon">&#xe605;</span>
+                    Niveau d'eau
+                </div>
+
+            <span class="title">Erreurs</span>
+                <div class="item">
+                    <span class="label">3</span>
+                    <span class="icon">&#xe604;</span>
+                    Erreurs
+                </div>
+        </nav>
+        
+        <!-- Main -->
+        <section id="main">
+
+            <!-- Le header -->
+            <header>
+                <span class="icon menu">&#xe600;</span>
+                <span class="icon settings">&#xe601;</span>
+                <h1 id="logo">Aquino</h1>
+            </header>
+          
+            <!-- Le container principal -->
+            <section id="container">
+                <div id="infos">
+                    <div class="item">
+                        <h1>07</h1>
+                        pH
+                    </div>
+                    <div class="item">
+                        <h1>17</h1>
+                        °C
+                    </div>
+                    <div class="item">
+                        <h1>85</h1>
+                        %
+                    </div>
+                </div>
+
+                <div class="clear"></div>
+                <hr style="margin-top: 50px">
+
+                <div id="alerts">
+                    <div class="item">
+                        <h1>Erreur titre</h1>
+                        <p>
+                            Je suis une erreur
+                        </p>
+                    </div>
+
+                    <div class="item">
+                        <h1>Erreur titre 2</h1>
+                        <p>
+                            Je suis une seconde erreur
+                        </p>
+                    </div>
+                </div>
+
+                <div id="alerts-pagination"></div>
+
+            </section>
+
+        </section>
+    
+        <!-- On inclue la librairie jQuery -->
+        <script type="text/javascript" src="scripts/jquery.min.js"></script>
+        <script type="text/javascript" src="scripts/slider/helper-plugins/jquery.touchSwipe.min.js"></script>
+        <script type="text/javascript" src="scripts/slider/jquery.caroufredsel.min.js"></script>
+        <!-- On inclue notre application -->
+        <script type="text/javascript" src="scripts/app.js"></script>
+    </body>
+</html>

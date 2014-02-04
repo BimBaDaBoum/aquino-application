@@ -1,0 +1,35 @@
+* {
+    @include box-sizing(border-box);
+}
+
+body {
+    background: $body-bg;
+    font-size: $body-size;
+}
+
+[id=main] {
+    position: fixed;
+    z-index: 3;
+    min-height: 100%;
+    background: $body-bg;
+    top: 0; left: 0; right: 0; bottom: 0;
+    overflow-y: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    transition-duration: 0.5s;
+    font-family: "Ubuntu";
+}
+
+[id=main].active {
+    @include translateX($nav-width);
+    position: fixed;
+}
+
+[id=container] {
+    padding: 0;
+    margin: 0;
+}
+
+.clear {
+    clear: both;
+}

@@ -1,0 +1,23 @@
+// On inclue compass
+@import "compass";
+
+// On inclue les configurations
+@import "config.scss";
+
+// On inclue le reset
+@import "compass/reset";
+
+// On inclue les bases
+@import "modules/fonts.scss";
+
+// On inclue les bases
+@import "modules/base.scss";
+
+// On inclue le layout
+@import "modules/layout.scss";
+
+// On inclue la typographie
+@import "modules/typographie.scss";
+
+// On inclue les boutons
+@import "modules/button.scss";
